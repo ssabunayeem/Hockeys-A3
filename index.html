@@ -195,7 +195,7 @@
                 <!-- card-2 -->
                 <div style="background-image:linear-gradient(#13131380, #13131380),url('images/p2.png')"
                     class=" p-6 px-10 pt-24 pb-10 bg-cover h-96 rounded-xl">
-                    <div class=" pt-10 w-[550px] space-y-5 text-white  ">
+                    <div class=" pt-10  space-y-5 text-white  ">
                         <h2 class="text-3xl">Junior Program</h2>
                         <p class="">Few hockey players in the world have achieved the honour of
                             winning gold medals at the Olympic Games as well as the World Cup,
@@ -206,7 +206,7 @@
                 <!-- card-3 -->
                 <div style="background-image:linear-gradient(#13131380, #13131380),url('images/p3.png')"
                     class=" px-10 pt-24 pb-10 bg-cover  rounded-xl lg:col-span-2">
-                    <div class="pt-16 w-[550px] space-y-5 text-white  ">
+                    <div class="pt-16 space-y-5 text-white  ">
                         <h2 class="text-3xl">Junior Program</h2>
                         <p class="">Few hockey players in the world have achieved the honour of
                             winning gold medals at the Olympic Games as well as the World Cup, Few hockey players in the
@@ -505,10 +505,10 @@
                     Sign up to get interesting news and updates delivered to your inb</p>
             </div>
 
-            <div class="flex">
-                <!-- column-1 -->
-                <div class="">
-                    <div class="p-14 border-2 border-inherit space-y-5 rounded-lg">
+            <div class="grid lg:grid-cols-3 gap-6">
+                <!-- row 1 -->
+                <div class="lg:col-span-1">
+                    <div class="border-2 border-inherit space-y-5 rounded-lg p-14">
                         <div class="w-96 h-56 bg-lime-50 rounded-lg pl-8 pt-8 space-y-2">
                             <img src="images/phone.png" alt="">
                             <p class="pt-10 p-color">Phone Number : </p>
@@ -525,40 +525,41 @@
                             <h3 class="font-bold text-xl">152/1 Mohakhali Wireless Gate</h3>
                         </div>
                     </div>
-
                 </div>
-                <!-- column-2 -->
-                <div class="grid gap-7 lg:grid-cols-2 p-16 items-center">
-                    <div class="">
-                        <p class="text-xl font-bold mb-2">Your Name</p>
-                        <input type="text" placeholder="Enter your full name"
-                            class="input input-bordered w-full max-w-xs bg-gray-100" />
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold mb-2">Your Email</p>
-                        <input type="text" placeholder="Enter your email"
-                            class="input input-bordered w-full max-w-xs bg-gray-100" />
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold mb-2">Subject</p>
-                        <input type="text" placeholder="Enter your Subject"
-                            class="input input-bordered w-full max-w-xs bg-gray-100" />
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold mb-2">Phone Number</p>
-                        <input type="text" placeholder="Enter your phone number"
-                            class="input input-bordered w-full max-w-xs bg-gray-100 border-0 outline-0" />
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold mb-2">Message</p>
-                        <div class="col-span-2">
-                            <textarea placeholder="Write your message" cols="110" rows="30"
-                                class="textarea textarea-bordered textarea-lg w-80 h-80  bg-gray-100"></textarea><br>
-                            <button class="btn px-72 bg-btn-color  text-white text-xl">Send Message</button>
+                  <!-- row 2 -->
+                <div class="lg:grid-cols-2">
+                    <div class=" lg:grid-cols-2 gap-7">
+                        <div class="">
+                            <p class="text-xl font-bold mb-2">Your Name</p>
+                            <input type="text" placeholder="Enter your full name"
+                                class="input input-bordered w-full max-w-xs bg-gray-100" />
                         </div>
-
+                        <div>
+                            <p class="text-xl font-bold mb-2">Your Email</p>
+                            <input type="text" placeholder="Enter your email"
+                                class="input input-bordered w-full max-w-xs bg-gray-100" />
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold mb-2">Subject</p>
+                            <input type="text" placeholder="Enter your Subject"
+                                class="input input-bordered w-full max-w-xs bg-gray-100" />
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold mb-2">Phone Number</p>
+                            <input type="text" placeholder="Enter your phone number"
+                                class="input input-bordered w-full max-w-xs bg-gray-100 border-0 outline-0" />
+                        </div>
+                        <div class="lg:col-span-2">
+                            <p class="text-xl font-bold mb-2">Message</p>
+                            <div class="">
+                                <textarea class="textarea" placeholder="Write your message" disabled></textarea>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-2">
+                            <button class="btn bg-btn-color  text-white text-xl">Send Message</button>
+                        </div>
+    
                     </div>
-
                 </div>
             </div>
         </section>
@@ -602,14 +603,17 @@
     <!-- footer -->
     <footer class="footer mt-10 p-20 bg-h-color text-neutral-400">
 
-        <nav class="ml-20">
+        <nav class="lg:ml-20">
             <h6 class=" text-4xl text-white mb-5">Get In Touch</h6>
             <P>Creative? Like money? Open a shop in minutes.</P>
             <P>For free. Just upload your art and designs and leave the rest to us. </P>
-            <P>We arrange for all the printing (on over 60 quality products) and shipping to almost anywhere on earth. </P>
+            <P>We arrange for all the printing (on over 60 quality products) and shipping to almost anywhere on earth.
+            </P>
             <P>Ready? Let’s go.</P>
-            <a class="link link-hover mt-5"><span><i class="fa-solid fa-envelope text-red-600 mr-3"></i></span>hockeys@support.com</a>
-            <a class="link link-hover"><span><i class="fa-solid fa-phone text-red-600 mr-3"></i></span>(+62) 123-321-543</a>
+            <a class="link link-hover mt-5"><span><i
+                        class="fa-solid fa-envelope text-red-600 mr-3"></i></span>hockeys@support.com</a>
+            <a class="link link-hover"><span><i class="fa-solid fa-phone text-red-600 mr-3"></i></span>(+62)
+                123-321-543</a>
         </nav>
         <nav>
             <h6 class="text-xl text-white mb-5">Company</h6>
